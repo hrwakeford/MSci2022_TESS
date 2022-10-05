@@ -1,1 +1,7 @@
 *.txt
+*.jpg
+*.png
+
+.vscode/
+dev.env
+core/__pycache__
