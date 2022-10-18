@@ -6,6 +6,6 @@
 
 dev.env
 
-
+lc_cache
 core/__pycache__
 .vscode/
