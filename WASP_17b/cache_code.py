@@ -37,8 +37,8 @@ else:
         pickle.dump(lc_collection, f)
 
 # Collate all sectors into one light curve.
-lc = lc_collection.stitch(corrector_func=lambda x: x.
-                          remove_nans().normalize(unit='unscaled'))
+lc = lc_collection.stitch(corrector_func=lambda x: x.remove_nans().normalize(unit='unscaled'))
 
 print("Done")
+
 
