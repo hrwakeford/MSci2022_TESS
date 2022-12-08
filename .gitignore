@@ -10,3 +10,5 @@ dev.env
 lc_cache
 core/__pycache__
 .vscode/
+
+install_packages.ipynb
