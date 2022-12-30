@@ -51,7 +51,7 @@ def read_df_params(df_param_list, df_ref_list, add_none=False):
 
             elif ("+" in param) and ("-" in param): #If param in format "123+12-23"
                 if param[0] == "-": #If param value is negative
-                    param = e[1:]
+                    param = param[1:]
                     param_tmp = re.split('\+|\-', param)
                     param = [float(param_tmp[0]), float(param_tmp[1]), float('-' + param_tmp[1])]
 
