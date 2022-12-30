@@ -19,3 +19,5 @@ planet_distribution/exoplanets.csv
 
 packages/__pycache__
 packages/__pycache__/parameters_reading.cpython-310.pyc
+
+packages/exotic_ld_data
