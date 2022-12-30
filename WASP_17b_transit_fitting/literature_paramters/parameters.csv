@@ -1,7 +1,0 @@
-paper_reference,instrument,method,R_p,R_p/R_star,e,P,i,b,T_0,a,omega,e sin(omega),,,
-,,,Planetary radius (R_J),Plaentary radius to stellar radius ratio,eccentricity,Period (days),orbital inclination (degs),impact parameter (R_star),Bjd−2 450 000,semi-major axis (AU),(deg),,,,
-DOI: 10.1051/0004-6361/201014525,"HARPS, CORALIE",radial velocity,"1.986 [+0.089, −0.074]","0.12929 [+0.00077, −0.00061]",<0.110,"3.7354330 [+0.0000076, −0.0000075]","86.63 [+0.39, −0.45]","0.400 [+0.043, −0.040]","4559.18096 [+0.00025, −0.00021]","0.0500 [+0.0017, −0.0017]",-,-,,,
-doi:10.1088/0004-637X/709/1/159,CORALIE,radial velocity,"1.74 [+0.26, −0.23]",,"0.129 [+0.106, −0.068]","3.7354417[+0.0000072, −0.0000073]","87.8 [+2.0, −1.0]","0.352 [+0.075, −0.316]",," 0.0501 [+0.0017, −0.0018]"," 290 [+106, −16]","−0.10 [+0.13, −0.13]",,,
-https://doi.org/10.1111%2Fj.1365-2966.2012.21781.x},MiNDSTEp with the Danish 1.54 m telescope,photometry,"1.932 [+0.052, -0.010]",,0.0 [adopted],"4.0 [+0.6, -0.6]",-,-,-,-,-,-,,,
-https://doi.org/10.1093/mnras/stac661,,,-,-,-,"3.73548546 [+0.00000027, -0.00000027]",-,-,-,-,-,-,,,
-,,,,,,,,,,,,,,,
