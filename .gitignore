@@ -18,3 +18,4 @@ planet_distribution/PS_2022.11.15_03.48.21.csv
 planet_distribution/exoplanets.csv
 
 packages/__pycache__
+packages/__pycache__/parameters_reading.cpython-310.pyc
