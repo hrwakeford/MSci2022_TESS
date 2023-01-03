@@ -7,7 +7,7 @@ from exotic_ld import StellarLimbDarkening
 
 
 
-def get_quadratic_ld_coeff(M_H, Teff, logg, ld_model=None):
+def get_quadratic_ld_coeff(M_H, Teff, logg, ld_model=None, rtn_sigmas=False):
     """
 
     Parameters
@@ -41,6 +41,10 @@ def get_quadratic_ld_coeff(M_H, Teff, logg, ld_model=None):
 
     mode = 'TESS' #Instrument mode
 
-    u1, u2 = sld.compute_quadratic_ld_coeffs(wavelength_range, mode)
+    if rtn_sigmas == True:
+        coeff, coeff_sigmas = sld.compute_quadratic_ld_coeffs(wavelength_range, mode, return_sigmas=rtn_sigmas)
+        return coeff, coeff_sigmas
+    else:
+        coeff = sld.compute_quadratic_ld_coeffs(wavelength_range, mode)
 
-    return u1, u2
+        return coeff
