@@ -1,4 +1,4 @@
-def radius_to_stellar_radii(R_planet, R_star):
+def radius_in_stellar_radii(R_planet, R_star):
     """
     Convert planetary radius (R_Jupiter) to stellar radii.
 
@@ -22,7 +22,7 @@ def radius_to_stellar_radii(R_planet, R_star):
 
     return R_planet_stellar_radii
 
-def semi_major_axis_to_stellar_radii(semi_major_axis, R_star):
+def semi_major_axis_in_stellar_radii(semi_major_axis, R_star):
     """
     Converting the semi-major axis (AU) to (Stellar radii)
 
