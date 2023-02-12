@@ -42,23 +42,26 @@ def read_df_params(df_param_list, df_ref_list, add_none=False):
     ref_list = []
 
     p_mask = np.where(df_param_list=="---", False, True) #Masking values
-
+ 
     for param, pmask, ref in zip(df_param_list, p_mask, df_ref_list):
+        if ("<" in param) or (">" in param): #If param is in format "<0.06"
+            pmask = False
+
         if pmask == True:
-            if "+/-" in param: #If param in format "123+/-12"
+            if "+/-" in param: #If param is in the format "123+/-12"
                 param = re.split('\+\/\-', param)
                 param = [float(param[0]), float(param[1]), float('-' + param[1])]
 
-            elif ("+" in param) and ("-" in param): #If param in format "123+12-23"
-                if param[0] == "-": #If param value is negative
+            elif ("+" in param) and ("-" in param): #If is param in the format "123+12-23"
+                if param[0] == "-": #If param value is a negative
                     param = param[1:]
                     param_tmp = re.split('\+|\-', param)
                     param = [float(param_tmp[0]), float(param_tmp[1]), float('-' + param_tmp[1])]
 
-                else: #param value is positive
+                else: #param value is a positive
                     param_tmp = re.split('\+|\-', param)
                     param = [float(param_tmp[0]), float(param_tmp[1]), float('-' + param_tmp[1])]
-                    
+
             else: #If param value has no error
                 param = [float(param), 0.0, 0.0]
 
